@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Welcome to the Forest Adventure!");
+        System.out.println("You wake up in a dark forest. You see two paths.");
+        System.out.println("Do you go LEFT or RIGHT?");
+        System.out.print("Type left or right: ");
+        String choice1 = input.nextLine();
+
+        if (choice1.equalsIgnoreCase("left")) {
+            System.out.println("You walk down the left path and hear growling...");
+            System.out.println("A wolf jumps out!");
+            System.out.println("Do you RUN or FIGHT?");
+            System.out.print("Type run or fight: ");
+            String choice2 = input.nextLine();
+
+            if (choice2.equalsIgnoreCase("run")) {
+                System.out.println("You sprint away and climb a tree just in time.");
+                System.out.println("You survive! Congratulations!");
+            } else if (choice2.equalsIgnoreCase("fight")) {
+                System.out.println("You pick up a stick and swing...");
+                System.out.println("But the wolf is stronger. You lose the fight.");
+                System.out.println("Game Over!");
+            } else {
+                System.out.println("You hesitated. The wolf got you.");
+                System.out.println("Game Over!");
+            }
+
+        } else if (choice1.equalsIgnoreCase("right")) {
+            System.out.println("The right path leads to a glowing cave.");
+            System.out.println("Do you ENTER the cave or IGNORE it?");
+            System.out.print("Type enter or ignore: ");
+            String choice2 = input.nextLine();
+
+            if (choice2.equalsIgnoreCase("enter")) {
+                System.out.println("You walk inside and find a treasure chest!");
+                System.out.println("Do you OPEN it or LEAVE it?");
+                System.out.print("Type open or leave:
+
